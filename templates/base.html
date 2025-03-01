@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>challangers</title>
+  <title>challangers{% block title %}{% endblock title %}</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -58,7 +58,7 @@
       </nav>
 
       
-      <a class="btn-getstarted" href="/signup">First Step</a>
+      
 
     </div>
   </header>
@@ -74,48 +74,22 @@
 
         <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-xl-10 col-lg-8">
-            <h2>“Challage Yourself for Better<span> Future."</span></h2>
-           
-            
-          </div>
+            {% block head %} 
+
+            {% endblock head %}
         </div>
 
-        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-binoculars"></i>
-              <h3><a href="">Health</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-bullseye"></i>
-              <h3><a href="">Education</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-fullscreen-exit"></i>
-              <h3><a href="">Athletics</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <i class="bi bi-card-list"></i>
-              <h3><a href="">Business</a></h3>
-            </div>
-          </div>
-          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
-            <div class="icon-box">
-              <i class="bi bi-gem"></i>
-              <h3><a href="">Finance</a></h3>
-            </div>
-          </div>
-        </div>
-
-      </div>
+        
 
     </section><!-- /Hero Section -->
+    
+        {% block body %}
+      
+      
+      
+      
+        {% endblock body %}
+     
 
     
 
